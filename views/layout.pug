@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title  CHatApp
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+    link(rel='stylesheet', href='../fontawesome/css/fontawesome.min.css')
+    script(src='../fontawesome/js/fontawesome.min.js')
+    block styles
+  body
+    .navbar.navbar-inverse.navbar-static-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') CHatApp
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+            if user
+              li
+                a(href='/logout') Logout
+            else
+              li
+                a(href='/chat') Chat
+              li
+                a(href='/login') Login
+              li
+                a(href='/register') Register
+              li.active
+                a(href='/settings') Settings
+              
+              
+              
+
+    .container
+      block content
+
+      block scripts

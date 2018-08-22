@@ -1,0 +1,350 @@
+doctype html
+//
+  * CoreUI - Free Bootstrap Admin Template
+  * @version v2.0.0-beta.0
+  * @link https://coreui.io
+  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
+  * Licensed under MIT (https://coreui.io/license)
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(name='keyword', content='')
+    title CHatApp
+    
+    // Icons
+    link(href='../plugins/css/flag-icon.min.css', rel='stylesheet')
+    link(href='../font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(href='../plugins/css/simple-line-icons.css', rel='stylesheet')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+
+    // Main styles for this application
+    link(href='../plugins/css/style.css', rel='stylesheet')
+    link(href='../plugins/vendors/css/pace.min.css', rel='stylesheet')
+  body.app.header-fixed.sidebar-fixed.aside-menu-fixed.sidebar-lg-show
+    header.app-header.navbar
+      button.navbar-toggler.sidebar-toggler.d-lg-none.mr-auto(type='button', data-toggle='sidebar-show')
+        span.navbar-toggler-icon
+      a.navbar-brand(href='#')
+        img.navbar-brand-full(src='img/brand/logo.svg', alt='CoreUI Logo', width='89', height='25')
+        img.navbar-brand-minimized(src='img/brand/sygnet.svg', alt='CoreUI Logo', width='30', height='30')
+      button.navbar-toggler.sidebar-toggler.d-md-down-none(type='button', data-toggle='sidebar-lg-show')
+        span.navbar-toggler-icon
+      ul.nav.navbar-nav.d-md-down-none
+        li.nav-item.px-3
+          a.nav-link(href='#') Dashboard
+        li.nav-item.px-3
+          a.nav-link(href='#') Users
+        li.nav-item.px-3
+          a.nav-link(href='#') Settings
+      ul.nav.navbar-nav.ml-auto
+        li.nav-item.d-md-down-none
+          a.nav-link(href='#')
+            i.icon-bell
+            span.badge.badge-pill.badge-danger 5
+        li.nav-item.d-md-down-none
+          a.nav-link(href='#')
+            i.icon-list
+        li.nav-item.d-md-down-none
+          a.nav-link(href='#')
+            i.icon-location-pin
+        li.nav-item.dropdown
+          a.nav-link(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false')
+            img.img-avatar(src='img/avatars/6.jpg', alt='admin@bootstrapmaster.com')
+          .dropdown-menu.dropdown-menu-right
+            .dropdown-header.text-center
+              strong Account
+            a.dropdown-item(href='#')
+              i.fa.fa-bell-o
+              |  Updates
+              span.badge.badge-info 42
+            a.dropdown-item(href='#')
+              i.fa.fa-envelope-o
+              |  Messages
+              span.badge.badge-success 42
+            a.dropdown-item(href='#')
+              i.fa.fa-tasks
+              |  Tasks
+              span.badge.badge-danger 42
+            a.dropdown-item(href='#')
+              i.fa.fa-comments
+              |  Comments
+              span.badge.badge-warning 42
+            .dropdown-header.text-center
+              strong Settings
+            a.dropdown-item(href='#')
+              i.fa.fa-user
+              |  Profile
+            a.dropdown-item(href='#')
+              i.fa.fa-wrench
+              |  Settings
+            a.dropdown-item(href='#')
+              i.fa.fa-usd
+              |  Payments
+              span.badge.badge-secondary 42
+            a.dropdown-item(href='#')
+              i.fa.fa-file
+              |  Projects
+              span.badge.badge-primary 42
+            .divider
+            a.dropdown-item(href='#')
+              i.fa.fa-shield
+              |  Lock Account
+            a.dropdown-item(href='#')
+              i.fa.fa-lock
+              |  Logout
+      button.navbar-toggler.aside-menu-toggler.d-md-down-none(type='button', data-toggle='aside-menu-lg-show')
+        span.navbar-toggler-icon
+      button.navbar-toggler.aside-menu-toggler.d-lg-none(type='button', data-toggle='aside-menu-show')
+        span.navbar-toggler-icon
+    .app-body
+      .sidebar
+        nav.sidebar-nav
+          ul.nav
+            li.nav-item
+              a.nav-link(href='index.html')
+                i.nav-icon.icon-speedometer
+                |  Dashboard
+                span.badge.badge-primary NEW
+            li.nav-title Theme
+            li.nav-item
+              a.nav-link(href='colors.html')
+                i.nav-icon.icon-drop
+                |  Colors
+            li.nav-item
+              a.nav-link(href='typography.html')
+                i.nav-icon.icon-pencil
+                |  Typography
+            li.nav-title Components
+            li.nav-item.nav-dropdown
+              a.nav-link.nav-dropdown-toggle(href='#')
+                i.nav-icon.icon-puzzle
+                |  Base
+              ul.nav-dropdown-items
+                li.nav-item
+                  a.nav-link(href='base-breadcrumb.html')
+                    i.nav-icon.icon-puzzle
+                    |  Breadcrumb
+                li.nav-item
+                  a.nav-link(href='base-cards.html')
+                    i.nav-icon.icon-puzzle
+                    |  Cards
+                li.nav-item
+                  a.nav-link(href='base-carousel.html')
+                    i.nav-icon.icon-puzzle
+                    |  Carousel
+                li.nav-item
+                  a.nav-link(href='base-collapse.html')
+                    i.nav-icon.icon-puzzle
+                    |  Collapse
+                li.nav-item
+                  a.nav-link(href='base-forms.html')
+                    i.nav-icon.icon-puzzle
+                    |  Forms
+                li.nav-item
+                  a.nav-link(href='base-jumbotron.html')
+                    i.nav-icon.icon-puzzle
+                    |  Jumbotron
+                li.nav-item
+                  a.nav-link(href='base-list-group.html')
+                    i.nav-icon.icon-puzzle
+                    |  List group
+                li.nav-item
+                  a.nav-link(href='base-navs.html')
+                    i.nav-icon.icon-puzzle
+                    |  Navs
+                li.nav-item
+                  a.nav-link(href='base-pagination.html')
+                    i.nav-icon.icon-puzzle
+                    |  Pagination
+                li.nav-item
+                  a.nav-link(href='base-popovers.html')
+                    i.nav-icon.icon-puzzle
+                    |  Popovers
+                li.nav-item
+                  a.nav-link(href='base-progress.html')
+                    i.nav-icon.icon-puzzle
+                    |  Progress
+                li.nav-item
+                  a.nav-link(href='base-scrollspy.html')
+                    i.nav-icon.icon-puzzle
+                    |  Scrollspy
+                li.nav-item
+                  a.nav-link(href='base-switches.html')
+                    i.nav-icon.icon-puzzle
+                    |  Switches
+                li.nav-item
+                  a.nav-link(href='base-tables.html')
+                    i.nav-icon.icon-puzzle
+                    |  Tables
+                li.nav-item
+                  a.nav-link(href='base-tabs.html')
+                    i.nav-icon.icon-puzzle
+                    |  Tabs
+                li.nav-item
+                  a.nav-link(href='base-tooltips.html')
+                    i.nav-icon.icon-puzzle
+                    |  Tooltips
+            li.nav-item.nav-dropdown
+              a.nav-link.nav-dropdown-toggle(href='#')
+                i.nav-icon.icon-cursor
+                |  Buttons
+              ul.nav-dropdown-items
+                li.nav-item
+                  a.nav-link(href='buttons-buttons.html')
+                    i.nav-icon.icon-cursor
+                    |  Buttons
+                li.nav-item
+                  a.nav-link(href='buttons-button-group.html')
+                    i.nav-icon.icon-cursor
+                    |  Buttons Group
+                li.nav-item
+                  a.nav-link(href='buttons-dropdowns.html')
+                    i.nav-icon.icon-cursor
+                    |  Dropdowns
+                li.nav-item
+                  a.nav-link(href='buttons-brand-buttons.html')
+                    i.nav-icon.icon-cursor
+                    |  Brand Buttons
+            li.nav-item
+              a.nav-link(href='charts.html')
+                i.nav-icon.icon-pie-chart
+                |  Charts
+            li.nav-item.nav-dropdown
+              a.nav-link.nav-dropdown-toggle(href='#')
+                i.nav-icon.icon-star
+                |  Icons
+              ul.nav-dropdown-items
+                li.nav-item
+                  a.nav-link(href='icons-flags.html')
+                    i.nav-icon.icon-star
+                    |  Flags
+                    span.badge.badge-success NEW
+                li.nav-item
+                  a.nav-link(href='icons-font-awesome.html')
+                    i.nav-icon.icon-star
+                    |  Font Awesome
+                    span.badge.badge-secondary 4.7
+                li.nav-item
+                  a.nav-link(href='icons-simple-line-icons.html')
+                    i.nav-icon.icon-star
+                    |  Simple Line Icons
+            li.nav-item.nav-dropdown
+              a.nav-link.nav-dropdown-toggle(href='#')
+                i.nav-icon.icon-bell
+                |  Notifications
+              ul.nav-dropdown-items
+                li.nav-item
+                  a.nav-link(href='notifications-alerts.html')
+                    i.nav-icon.icon-bell
+                    |  Alerts
+                li.nav-item
+                  a.nav-link(href='notifications-badge.html')
+                    i.nav-icon.icon-bell
+                    |  Badge
+                li.nav-item
+                  a.nav-link(href='notifications-modals.html')
+                    i.nav-icon.icon-bell
+                    |  Modals
+            li.nav-item
+              a.nav-link(href='widgets.html')
+                i.nav-icon.icon-calculator
+                |  Widgets
+                span.badge.badge-primary NEW
+            li.divider
+            li.nav-title Extras
+            li.nav-item.nav-dropdown
+              a.nav-link.nav-dropdown-toggle(href='#')
+                i.nav-icon.icon-star
+                |  Pages
+              ul.nav-dropdown-items
+                li.nav-item
+                  a.nav-link(href='login.html', target='_top')
+                    i.nav-icon.icon-star
+                    |  Login
+                li.nav-item
+                  a.nav-link(href='register.html', target='_top')
+                    i.nav-icon.icon-star
+                    |  Register
+                li.nav-item
+                  a.nav-link(href='404.html', target='_top')
+                    i.nav-icon.icon-star
+                    |  Error 404
+                li.nav-item
+                  a.nav-link(href='500.html', target='_top')
+                    i.nav-icon.icon-star
+                    |  Error 500
+            li.nav-item.mt-auto
+              a.nav-link.nav-link-success(href='https://coreui.io', target='_top')
+                i.nav-icon.icon-cloud-download
+                |  Download CoreUI
+            li.nav-item
+              a.nav-link.nav-link-danger(href='https://coreui.io/pro/', target='_top')
+                i.nav-icon.icon-layers
+                |  Try CoreUI
+                strong PRO
+        button.sidebar-minimizer.brand-minimizer(type='button')
+      main.main
+        // Breadcrumb
+        ol.breadcrumb
+          li.breadcrumb-item Home
+          li.breadcrumb-item
+            a(href='#') Admin
+          li.breadcrumb-item.active Dashboard
+          // Breadcrumb Menu
+          li.breadcrumb-menu.d-md-down-none
+            .btn-group(role='group', aria-label='Button group')
+              a.btn(href='#')
+                i.icon-speech
+              a.btn(href='./')
+                i.icon-graph
+                |   Dashboard
+              a.btn(href='#')
+                i.icon-settings
+                |   Settings
+        
+          
+                  
+      aside.aside-menu
+        ul.nav.nav-tabs(role='tablist')
+          li.nav-item
+            a.nav-link.active(data-toggle='tab', href='#timeline', role='tab')
+              i.icon-list
+          li.nav-item
+            a.nav-link(data-toggle='tab', href='#messages', role='tab')
+              i.icon-speech
+          li.nav-item
+            a.nav-link(data-toggle='tab', href='#settings', role='tab')
+              i.icon-settings
+        // Tab panes
+        .tab-content
+          #timeline.tab-pane.active(role='tabpanel')
+            .list-group.list-group-accent
+              .list-group-item.list-group-item-accent-secondary.bg-light.text-center.font-weight-bold.text-muted.text-uppercase.small Today
+              .list-group-item.list-group-item-accent-warning.list-group-item-divider
+                .avatar.float-right
+              
+                
+                
+         
+           
+         
+    footer.app-footer
+      div
+        a(href='https://coreui.io') CoreUI
+        span © 2018 creativeLabs.
+      .ml-auto
+        span Powered by
+        a(href='https://coreui.io') CoreUI
+    // Bootstrap and necessary plugins
+    script(src='../plugins/jquery/jquery.min.js')
+    script(src='../plugins/popper/js/popper.min.js')
+    script(src='../plugins/bootstrap/js/bootstrap.min.js')
+    script(src='../plugins/pace/js/pace.min.js')
+    script(src='../plugins/coreui/js/coreui.min.js')
+    script(src='../plugins/app/js/main.js')
+    script(src='../plugins/tooltip/js/tooltips.min.js')
