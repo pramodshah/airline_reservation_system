@@ -1,0 +1,18 @@
+extends ../layout
+
+block styles
+    link(href='../stylesheets/userLogin.css', rel='stylesheet')
+    
+
+
+block content
+  form(method='POST')
+    legend User Login
+    .form-group
+      label(for='username') Username
+      input.form-control(type='text', name='username', autofocus)
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password')
+    button.btn.btn-primary(type='submit') Login
+    a.register-title(href='/register')  User Register

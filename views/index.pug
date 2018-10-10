@@ -1,0 +1,53 @@
+extends ./layout
+
+block styles
+    link(rel='stylesheet', href='/animate.changethewords.css')
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet"> 
+
+
+
+block content
+    .container
+      .row
+        .body-title
+            |Airline Reservation System
+
+    .container
+        .row
+            #changethewords
+              .change-words-content
+                span(data-id='1') Welcome
+                span(data-id='2') To
+                span(data-id='3') Online
+                span(data-id='4') Airline
+                span(data-id='5') Reservation
+                span(data-id='6') System
+                  
+                              
+              
+    
+    .container
+      .row
+        .body-content
+          .columns.body-header
+            .col-xs-12.col-sm-4
+              img(src='/images/admin.ico', alt='admin', width='150', height='150')
+              .hr.header-title
+                a.login-title(href='/adminLogin') Admin Login
+            .col-xs-12.col-sm-4
+              img(src='/images/user2.ico', alt='user', width='150', height='150')
+              .hr.header-title
+                a.login-title(href='/userLogin') User Login
+
+block scripts
+    script(src='/jquery.changethewords.js')
+    script(type='text/javascript').
+        $(function() {
+        $("#changethewords").changeWords({
+        time: 1500,
+        animate: "tada",
+        selector: "span",
+        repeat: true // false
+        });
+        });
+

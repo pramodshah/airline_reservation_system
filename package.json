@@ -1,5 +1,5 @@
 {
-  "name": "chatapp",
+  "name": "airline_reservation_system",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pramodshah/chatapp.git"
+    "url": "git+https://github.com/pramodshah/airline_reservation_system.git"
   },
   "author": "pramod shah",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pramodshah/chatapp/issues"
+    "url": "https://github.com/pramodshah/airline_reservation_system/issues"
   },
-  "homepage": "https://github.com/pramodshah/chatapp#readme",
+  "homepage": "https://github.com/pramodshah/airline_reservation_system#readme",
   "dependencies": {
     "bcrypt": "^3.0.0",
     "bcrypt-nodejs": "0.0.3",
@@ -24,13 +24,14 @@
     "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "express": "^4.15.5",
+    "express": "^4.16.3",
     "express-messages": "^1.0.1",
     "express-session": "^1.15.6",
     "express-validator": "^5.0.3",
     "mongodb": "^3.0.3",
     "mongoose": "^5.0.8",
     "morgan": "~1.9.0",
+    "node": "^10.11.0",
     "nodemailer": "^4.6.8",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0",
