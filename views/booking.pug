@@ -1,0 +1,79 @@
+extends layout_booking
+
+block styles
+    link(href='/stylesheets/booking.css', rel='stylesheet')
+
+
+block content
+    
+    //- link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', rel='stylesheet')
+    //- script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js')
+    //- script(src='//code.jquery.com/jquery-1.11.1.min.js')
+    //- // ---- Include the above in your HEAD tag --------
+    div
+        
+        .card.hovercard
+            .card-background
+            //-     img.card-bkimg(alt='', src='http://www.busonlineticket.com/booking/images/train-tickets.png')
+            //- // http://lorempixel.com/850/280/people/9/
+            .useravatar
+                img(alt='', src='/images/plane2.jpg')
+            .card-info
+                span.card-title Booking Ticket
+        .btn-pref.btn-group.btn-group-justified.btn-group-lg(role='group', aria-label='...')
+            .btn-group(role='group')
+                button#stars.btn.btn-primary(type='button', href='#tab1', data-toggle='tab')
+                    span.glyphicon.glyphicon-star(aria-hidden='true')
+                    .hidden-xs One-Way
+            .btn-group(role='group')
+                button#favorites.btn.btn-default(type='button', href='#tab2', data-toggle='tab')
+                    span.glyphicon.glyphicon-star(aria-hidden='true')
+                    span.glyphicon.glyphicon-star(aria-hidden='true')
+                    .hidden-xs Round-trip
+        .well
+            .tab-content
+                #tab1.tab-pane.fade.in.active
+                    .form-group
+                        .form-group.col-lg-6
+                            input.form-control(name='', id='', value='', placeholder='From', type='text')
+                        .form-group.col-lg-6
+                            input.form-control(name='', id='', value='', placeholder='To', type='text')
+                    .form-group.col-lg-6
+                        .input-group
+                            span.input-group-addon
+                                span.glyphicon.glyphicon-calendar
+                            input.form-control(placeholder='depart', type='date')
+                    .form-group.col-lg-6
+                        .input-group
+                            span.input-group-addon
+                                span.glyphicon.glyphicon-user
+                            input.form-control(placeholder='Passengers', type='text')
+                    a.btn.btn-primary.btn-lg.btn3d(href='#', role='button')
+                        span.glyphicon.glyphicon-tag Find Ticket
+                #tab2.tab-pane.fade.in
+                    .form-group
+                        .form-group.col-lg-6
+                            input.form-control(name='', id='', value='', placeholder='From', type='text')
+                        .form-group.col-lg-6
+                            input.form-control(name='', id='', value='', placeholder='To', type='text')
+                    .form-group.col-lg-6
+                        .input-group
+                            span.input-group-addon
+                                span.glyphicon.glyphicon-calendar
+                            input.form-control(placeholder='depart', type='date')
+                    .form-group.col-lg-6
+                        .input-group
+                            span.input-group-addon
+                                span.glyphicon.glyphicon-calendar
+                            input.form-control(placeholder='depart', type='date')
+                    .form-group.col-lg-6
+                        .input-group
+                            span.input-group-addon
+                                span.glyphicon.glyphicon-user
+                            input.form-control(placeholder='Passengers', type='text')
+                    a.btn.btn-primary.btn-lg.btn3d(href='#', role='button')
+                        span.glyphicon.glyphicon-tag Find Ticket
+
+                
+block scripts 
+    script(src='/js/booking.js')
